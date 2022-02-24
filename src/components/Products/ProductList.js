@@ -28,6 +28,7 @@ export const ProductList = () => {
     return (
         //fragment to put children under single component
         <>
+            <h2>Products</h2>
             <ul>
                 {
                     //interpolating an html representation that maps through products
@@ -39,9 +40,9 @@ export const ProductList = () => {
                             //a unique key attribute for html elements is used in React
                             //Update the product list to replace the product type number with the actual name of the product type
                             return <li key={`product--${productObject.id}`}>
-                                {productObject.name}
-                            <p>Price: ${productObject.price}</p>
-                            <p>Category: {productObject.productType.name}</p>
+                                <h4>{productObject.name}</h4>
+                                <p>Price: ${productObject.price}</p>
+                                <p>Category: {productObject.productType.name}</p>
                             </li>
                         }
                     )

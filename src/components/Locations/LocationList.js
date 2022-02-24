@@ -26,6 +26,7 @@ export const LocationList = () => {
     return (
         //fragment to put children under single component
         <>
+            <h2>Locations</h2>
             <ul>
                 {
                     //interpolating an html representation that maps through locations
@@ -35,7 +36,11 @@ export const LocationList = () => {
                             //can only return one element - so put all html elements in one
                             //don't need dollar sign to iterate in React
                             //a unique key attribute for html elements is used in React
-                            return <li key={`location--${locationObject.id}`}>{locationObject.name}</li>
+                            return <li key={`location--${locationObject.id}`}>
+                                <h4>{locationObject.name}</h4>
+                                <p>{locationObject.address}</p>
+                                <p>{locationObject.phone}</p>
+                            </li>
                         }
                     )
                 }

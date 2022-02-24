@@ -1,0 +1,16 @@
+.employee {
+    background-color: lightblue;
+    width: 75%;
+    margin: -1px -1px;
+    font-size: 16px;
+}
+
+.employee_data {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.hire_button {
+    padding: 1rem 0;
+}
+
