@@ -1,0 +1,21 @@
+.kandyBag {
+    background-color: rgb(255, 197, 197);
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+
+}
+
+.purchasesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 4%;
+    border: 1px solid;
+
+}
+
+.purchases {
+    padding-bottom: 10rem;
+    width: 40%;
+}

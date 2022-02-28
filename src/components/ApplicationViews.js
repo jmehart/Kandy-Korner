@@ -5,6 +5,7 @@ import { EmployeeForm } from "./employees/EmployeeForm"
 import { EmployeeList } from "./employees/EmployeeList"
 import { LocationList } from "./Locations/LocationList"
 import { ProductList } from "./Products/ProductList"
+import { PurchaseList } from "./purchases/PurchaseList"
 
 
 //Define how your application will respond when the URL matches each of those patterns
@@ -26,6 +27,9 @@ export const ApplicationViews = () => {
             </Route>
             <Route exact path="/customers">
                 <CustomerList />
+            </Route>
+            <Route path="/purchases">
+                <PurchaseList />
             </Route>
         </>
     )

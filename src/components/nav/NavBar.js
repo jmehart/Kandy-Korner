@@ -20,10 +20,10 @@ export const NavBar = (props) => {
                 <Link className="navbar__link" to="/productLocations?_expand=productId">Purchase Options</Link>
             </li>
             <li className="navbar__item ">
-                <Link className="navbar__link" to="/purchases">My Orders</Link>
+                <Link className="navbar__link" to="/employees">Employees</Link>
             </li>
             <li className="navbar__item ">
-                <Link className="navbar__link" to="/employees">Employees</Link>
+                <Link className="navbar__link" to="/purchases">My Orders</Link>
             </li>
             <li className="navbar__item">
                 <Link className="navbar__link" to="#"
